@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 :root {
     background-color: #0f181e;
     color: var(--accetnColor);
     --accetnColor : gold;
+    font-family: "Modern Antiqua", serif;;
 }
 
 * {
@@ -47,7 +50,7 @@ main {
         box-shadow: 0 0 30px 10px rgb(0, 0, 0);
         margin-bottom: 100px;
 
-        img {
+        #catPP {
             border-radius: 100px;
             width: 150px;
             margin: 10px;
@@ -63,7 +66,7 @@ main {
 
     #choice {
         width: 100vw;
-        height: calc(100vh/2);
+        min-height: 500px;
         display: flex;
         justify-content: center;
         ul {
@@ -82,24 +85,28 @@ main {
                 .imgContainer {
                     width: 100%;
                     aspect-ratio: 1/1;
-                    background-color: green;
                     border: 4px solid black;
                     overflow: hidden;
                     border-radius: 10%;
                     .choiceImg {
+                        transition: opacity 0.5s ease, transform 0.5s ease;
+                        backface-visibility: hidden;
                         img {
-                            display: none;
-                            height: 100%;
-                            width: 100%;
+                            display: flex;
                         }
                     }
                     .backImg {
+                        transform: scaleX(-1);
+                        transition: opacity 0.5s ease, transform 0.5s ease;
+                        backface-visibility: hidden;
+                        background-color: rgba(155, 155, 155, 0.281);
                         height: 100%;
                         width: 100%;
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        padding: 15px;
                         p {
+                            color: white;
+                            font-size: 2rem;
                         }
                     }
                 }
@@ -143,6 +150,10 @@ footer {
 
 /* animation : */
 
+.card {
+    perspective: 1000px; /* Applique la perspective au conteneur parent */
+}
+
 .choiceButton {
     transition: 0.5s;
     scale: 1;
@@ -152,4 +163,44 @@ footer {
 .choiceButton:hover {
     scale: 1.1;
     box-shadow: 0 0 15px 0 var(--accetnColor);
+}
+
+.imgContainer {
+    perspective: 1000px;
+    scale: 1;
+    transition: 0.5s;
+    box-shadow: none;
+    .choiceImg {
+        img {
+            transform: translateX(-20px);
+            transition: 0.5s;
+            height: 110%;
+            width: 110%;
+        }
+    }
+}
+
+.imgContainer:hover {
+    scale: 1.05;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.658);
+    .choiceImg {
+        img {
+            transform: translateX(20px);
+            zoom: 10%;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.imgContainer.flipped {
+    transform: rotateY(180deg); /* Effectuer la rotation du conteneur */
+}
+
+.imgContainer.flipped .choiceImg {
+    display: none; /* Masquer l'image de face */
+}
+
+.imgContainer.flipped .backImg {
+    display: flex; /* Rendre visible l'image de dos */
 }
