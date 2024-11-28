@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
 
 :root {
     --color-one: #0f181e;
     --color-two: #416338;
     --color-three: #fcf4cd;
+    --font-one: "Mr De Haviland", cursive;
+    --font-two: "Neuton", serif;
 }
 
 * {
@@ -15,58 +15,40 @@
 
 body {
     background-color: var(--color-one);
-    color: var(--color-two);
-}
-
-.moon {
-    color: var(--color-three);
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-height: 200px;
-    #avatar {
-        max-width: 150px;
-        max-height: 150px;
-    }
-    ul {
-        list-style: none;
-        color: var(--color-three);
-    }
-    #exitImage {
-        max-width: 50px;
-        max-height: 50px;
-    }
-}
-
-.line {
-    height: 3px;
-    width: 95vw;
-    margin: 0 auto;
 }
 
 main {
+    background-image: url(../ASSETS/chap02-firstBack.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     h1 {
         color: var(--color-three);
-        font-size: 3rem;
-        text-align: center;
+        margin: 0 auto;
+        font-family: var(--font-one);
+        font-size: 4rem;
     }
     p {
-        max-width: 500px;
+        background: rgba(255, 255, 255, 0.5);
+        max-width: 800px;
+        min-height: 300px;
         margin: 0 auto;
+        font-family: var(--font-two);
+        font-size: 1.3rem;
+        border-radius: 15px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
     }
-    .italianno {
-        font-family: "Italianno", cursive;
-        font-size: 1.7rem;
-    }
-    .greatVibes {
-        font-family: "Great Vibes", cursive;
-        font-size: 1.5rem;
-    }
-    .nightShade {
-        font-family: "Jim Nightshade", cursive;
-        font-size: 1.5rem;
+    .choice {
+        width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
