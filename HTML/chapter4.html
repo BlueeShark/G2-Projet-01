@@ -1,21 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/chapter4Style.css">
+    <script src="../JS/chapter4.js" defer></script>
     <title>Chapitre 4 : L’Affrontement Nocturne</title>
 </head>
+
 <body>
     <header>
         <section>
-            <p id="Chapitre4">Chapritre 4 : Etape 1 : Le debut des hostilité</p>
+            <p id="Chapitre4">Chapritre 4 :</p>
+            <br>
+            <p>Etape 1 : Le debut des hostilité</p>
         </section>
     </header>
     <main>
-        <section>
-            
+        <section id="catTalking">
+            <img src="../ASSETS/picture_profile_cat.png" alt="profile picture of the cat">
+            <p>Il faut que je m'approche de la grange.. <br>Mais comment faire ? humm...</p>
+        </section>
+        <section id="catTalking" style="display: none;">
+            <p>Ils m'ont répéré, je vais devoir me battre si je veux reussir !</p>
+        </section>
+        <section id="choice">
+            <ul>
+                <li>
+                    <div class="imgContainer">
+                        <div class="choiceImg">
+                            <img src="../ASSETS/stealth_cat.png" alt="Chat discret dans la foret">
+                        </div>
+                        <div class="backImg">
+                            <p>Texte affiché après la rotation</p>
+                        </div>
+                    </div>
+                    <a href="">
+                        <p class="choiceButton">Furtivité</p>
+                    </a>
+                </li>
+                <li>
+                    <div class="imgContainer">
+                        <div class="choiceImg">
+                            <img src="../ASSETS/cat_ready_fight.png" alt="Chat discret dans la foret">
+                        </div>
+                        <div class="backImg">
+                            <p>Texte affiché après la rotation</p>
+                        </div>
+                    </div>
+                    <a href="">
+                        <p class="choiceButton">Agressivité</p>
+                    </a>
+                </li>
+                <li>
+                    <div class="imgContainer">
+                        <div class="choiceImg">
+                            <img src="../ASSETS/cat_divertion.png" alt="Chat discret dans la foret">
+                        </div>
+                        <div class="backImg">
+                            <p>Texte affiché après la rotation</p>
+                        </div>
+                    </div>
+                    <a href="">
+                        <p class="choiceButton">Divertion</p>
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
+    <footer>
+        <section>
+            <p>Chaque choix peut etre le dernier...</p>
+        </section>
+    </footer>
 </body>
+
 </html>
