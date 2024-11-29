@@ -1,0 +1,83 @@
+:root {
+    --color-one: #0f181e;
+    --color-two: #fcf4cd;
+    --font-one: "Uncial Antiqua", serif;
+    --font-two: "Modern Antiqua", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Uncial Antiqua", serif;
+    color: #fff;
+}
+
+body {
+    background-color: #0f181e;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background {
+    background-image: url('./Imgchap3acc.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    filter: brightness(0.7);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: beige;
+    display: flex;
+    margin-left: 115px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 120px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    font-family: "Modern Antiqua" serif;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: "Modern Antiqua" serif;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.7);
+    color: #000;
+}
