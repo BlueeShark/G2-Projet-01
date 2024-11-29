@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Modern+Antiqua&family=Uncial+Antiqua&display=swap');
+
+:root {
+    --color-one: #0f181e;
+    --color-two: #fcf4cd;
+    --color-three: #416338;
+    --font-one: "Uncial Antiqua", serif;
+    --font-two: "Modern Antiqua", serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-one);
+}
+
+main {
+    background-image: url(../ASSETS/chap02_death.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    h1 {
+        color: var(--color-two);
+        margin: 0 auto;
+        font-family: var(--font-one);
+        font-size: 3rem;
+        padding: 0px 10px;
+        text-align: center;
+        text-shadow: 1px 1px 5px var(--color-one);
+    }
+}
+
+#pageOne {
+    background-image: url(../ASSETS/chap02_firstBack.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    h1 {
+        color: var(--color-two);
+        margin: 0 auto;
+        font-family: var(--font-one);
+        font-size: 3rem;
+        padding: 0px 10px;
+        text-align: center;
+        text-shadow: 1px 1px 5px var(--color-one);
+    }
+}
+
+.mainPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainText {
+    background: rgba(255, 255, 255, 0.5);
+    max-width: 800px;
+    min-height: 300px;
+    margin: 0 auto 100px auto;
+    font-family: var(--font-two);
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 4px 19px 0px rgba(15,24,30,0.85);
+    backdrop-filter: blur(2px);
+}
+
+.choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 800px;
+    width: 80vw;
+    a {
+        text-decoration: none;
+    }
+    p {
+        color: var(--color-two);
+        width: 250px;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 10px 20px;
+        background-color: rgb(20, 20, 20);
+        border: var(--color-two) solid 2px;
+        border-radius: 15px;
+        cursor: pointer;
+        font-family: var(--font-two);
+        box-shadow: 10px 4px 19px 0px rgba(15,24,30,0.85);
+    }
+}
