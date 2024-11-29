@@ -103,14 +103,14 @@ main {
                         height: 100%;
                         width: 100%;
                         display: flex;
-                        padding: 15px;
+                        padding: 20px;
                         p {
                             color: white;
-                            font-size: 2rem;
+                            font-size: 1.5rem;
                         }
                     }
                 }
-                a {
+                .button-link {
                     margin: 50px 0;
                     display: flex;
                     justify-content: center;
@@ -166,10 +166,10 @@ footer {
 }
 
 .imgContainer {
-    perspective: 1000px;
     scale: 1;
     transition: 0.5s;
     box-shadow: none;
+    cursor: pointer;
     .choiceImg {
         img {
             transform: translateX(-20px);
@@ -198,9 +198,49 @@ footer {
 }
 
 .imgContainer.flipped .choiceImg {
-    display: none; /* Masquer l'image de face */
+    animation: flipCard 0.1s linear forwards;
 }
 
 .imgContainer.flipped .backImg {
-    display: flex; /* Rendre visible l'image de dos */
+    animation: flipCard 0.1s linear reverse forwards;
 }
+
+#intro-screen {
+    line-height: 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+    animation: fadeOut 3s forwards;
+}
+
+.intro-text {
+    color: gold;
+    font-size: 3em;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    50% {opacity: 1;}
+    100% { opacity: 0; display: none; }
+}
+
+@keyframes flipCard {
+    0% { 
+        opacity: 1; 
+        display: flex;
+    }
+    100% {
+        opacity: 0; 
+        display: none; 
+    }
+}
+
+

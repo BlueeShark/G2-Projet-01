@@ -14,3 +14,9 @@ document.querySelectorAll('.card').forEach(card => {
         }
     });
 });
+
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('intro-screen').style.display = 'none';
+    }, 5000);
+};
