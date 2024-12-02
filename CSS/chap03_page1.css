@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Modern+Antiqua&family=Uncial+Antiqua&display=swap');
+
+:root {
+    --color-one: #0f181e;
+    --color-two: #fcf4cd;
+    --font-one: "Uncial Antiqua", serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../ASSETS/Chap3_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: beige;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    height: auto;
+}
+
+
+main {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left: 400px;
+    margin-top: 10%;
+
+}
+
+h1 {
+    font-family: var(--font-one);
+    text-shadow: 1px 1px 5px var(--color-one);
+}
+
+p {
+    width: 400px;
+    height: 200px;
+    min-height: 200px;
+    color: #0f181e;
+    font-size: 1, 7vh;
+    border-radius: 15px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 4px 19px 0px rgba(15, 24, 30, 0.85);
+    backdrop-filter: blur(2px);
+    font-family: "Modern Antiqua", serif;
+}
+
+
+button {
+    background-color: beige;
+    border-color: #0f181e;
+    font-family: var(--font-one);
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 70%;
+    transition: transform 0.3s ease,
+        background-color 0.3s ease;
+
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(174, 156, 17, 0.3);
+}
+
+button:hover {
+    background-color: var(--color-one);
+    transform: scale(1.1);
+}
