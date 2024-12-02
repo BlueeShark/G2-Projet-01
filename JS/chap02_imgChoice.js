@@ -1,10 +1,14 @@
 const button = document.getElementById("javChoices");
 const body = document.body;
-const text = document.querySelectors(".choiceBlock p");
+const text = document.querySelectorAll(".choiceBlock p");
 
-function changeColor() {
+function changeColorLight() {
     body.style.backgroundColor = "var(--color-three)";
-    text.style.backgroundColor = "var(--color-three)";
+    text.forEach(function(p) {
+        p.style.backgroundColor = "var(--color-three)";
+        p.style.border = "var(--color-one) solid 2px";
+        p.style.color = "var(--color-one)";
+    });
 }
 
-button.addEventListener("click", changeColor);
+button.addEventListener("click", changeColorLight);
