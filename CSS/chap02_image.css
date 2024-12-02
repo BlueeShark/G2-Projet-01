@@ -3,7 +3,8 @@
 :root {
     --color-one: #0f181e;
     --color-two: #fcf4cd;
-    --color-three: #416338;
+    --color-three: #e0e8ed;
+    --color-four: ;
     --font-one: "Uncial Antiqua", serif;
     --font-two: "Modern Antiqua", serif;
 }
@@ -94,7 +95,7 @@ main {
         text-align: center;
         font-size: 1.3rem;
         padding: 10px 20px;
-        background-color: rgb(20, 20, 20);
+        background-color: var(--color-one);
         border: var(--color-two) solid 2px;
         border-radius: 15px;
         cursor: pointer;
