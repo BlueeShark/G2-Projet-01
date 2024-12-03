@@ -4,12 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="icon" type="image/x-icon" href="../ASSETS/favicon.ico">
+        <script type="text/javascript" src="/JS/index.js"></script>
         <title>Chat Story</title>
     </head>
     <body>
         <header>
             <nav>
-                <button disabled>futur burger bouton</button>
+                <button class="menu-btn">
+                    <span class="burger-icon"></span>
+                    <ul class="menu">
+                        <li><a href="/index.html">Accueil</a></li>
+                        <li><a href="/">Lore</a></li>
+                        <li><a href="/">Credits</a></li>
+                    </ul>
+                </button>
             </nav>
         </header>
         <main>
@@ -30,13 +39,15 @@
                     </div>
                 </div>
             </div>
-            <button class="choiceButton">JOUER</button>
+            <button class="choiceButton">
+                <a href="/HTML/chap04_01_firstChoice.html">JOUER</a>
+            </button>
             <section class="box1">
                 <Article>
                     <div class="village">
                         <img src="ASSETS/poulet.png" alt="poulet dans un village">
                     </div>
-                    <p>Macaroon cupcake pie dessert oat cake.
+                    <p class="lore">Macaroon cupcake pie dessert oat cake.
                     Gingerbread sesame snaps candy canes dragée bonbon cotton candy gummi bears sweet roll.
                     Wafer bear claw candy canes shortbread oat cake powder bear claw.
                     Ice cream candy canes gummies cake halvah sugar plum.
@@ -46,5 +57,12 @@
                 </Article>
             </section>
         </main>
+        <footer>
+            <div class="box-lore">
+                <p>@ 2024 Wild Code School</p>
+                <p>Made with ❤️ by wilders</p>
+                <p>Groupe 2</p>
+            </div>
+        </footer>
     </body>
 </html>
