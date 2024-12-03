@@ -3,7 +3,8 @@
 :root {
     --color-one: #0f181e;
     --color-two: #fcf4cd;
-    --color-three: #416338;
+    --color-three: #c2e6d8;
+    --color-four: #54969c;
     --font-one: "Uncial Antiqua", serif;
     --font-two: "Modern Antiqua", serif;
 }
@@ -18,7 +19,6 @@ body {
 }
 
 main {
-    background-image: url(../ASSETS/chap02_death.png);
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -39,22 +39,14 @@ main {
 
 #pageOne {
     background-image: url(../ASSETS/chap02_firstBack.png);
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    h1 {
-        color: var(--color-two);
-        margin: 0 auto;
-        font-family: var(--font-one);
-        font-size: 3rem;
-        padding: 0px 10px;
-        text-align: center;
-        text-shadow: 1px 1px 5px var(--color-one);
-    }
+}
+
+#pageTwo {
+    background-image: url(../ASSETS/chap02_ennemyBase.png);
+}
+
+#pageDeath {
+    background-image: url(../ASSETS/chap02_firstBack.png);
 }
 
 .mainPart {
@@ -68,6 +60,7 @@ main {
     background: rgba(255, 255, 255, 0.5);
     max-width: 800px;
     min-height: 300px;
+    min-width: 600px;
     margin: 0 auto 100px auto;
     font-family: var(--font-two);
     font-size: 1.3rem;
@@ -87,6 +80,12 @@ main {
     width: 80vw;
     a {
         text-decoration: none;
+        border-radius: 15px;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    a:hover {
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+        transform: scale(1.05);
     }
     p {
         color: var(--color-two);
@@ -94,7 +93,7 @@ main {
         text-align: center;
         font-size: 1.3rem;
         padding: 10px 20px;
-        background-color: rgb(20, 20, 20);
+        background-color: var(--color-one);
         border: var(--color-two) solid 2px;
         border-radius: 15px;
         cursor: pointer;
