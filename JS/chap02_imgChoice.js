@@ -18,8 +18,6 @@ function changeColorDark() {
 button1.addEventListener("click", changeColorLight);
 button2.addEventListener("click", changeColorDark);
 
-// Modifier la variable CSS
-
 // const body = document.body;
 // const text1 = document.querySelectorAll(".choiceBlock p");
 // const text2 = document.querySelectorAll("#themeBar button");

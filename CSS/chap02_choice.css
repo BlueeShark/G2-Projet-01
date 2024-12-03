@@ -30,17 +30,13 @@ header {
         display: flex;
         justify-content: center;
         padding: 15px 0;
-        button {
-            background-color: var(--color-one);
-            color: var(--color-two);
-            border: var(--color-two) solid 2px;
-            border-radius: 15px;
+        img {
+            padding: 0 10px;
             cursor: pointer;
-            font-family: var(--font-two);
-            font-size: 0.8rem;
-            box-shadow: 10px 4px 19px 0px rgba(0, 0, 0, 0.85);
-            padding: 5px;
-            margin: 0 5px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.2);
         }
     }
 }
@@ -59,13 +55,19 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        img {
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        img:hover {
+            box-shadow: 0 0 10px 5px rgba(252, 244, 205, 0.7);
+        }
         a {
             text-decoration: none;
             border-radius: 15px;
             transition: box-shadow 0.3s ease, transform 0.3s ease;
         }
         a:hover {
-            box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 10px 5px rgba(252, 244, 205, 0.7);
             transform: scale(1.05);
         }
         p {
