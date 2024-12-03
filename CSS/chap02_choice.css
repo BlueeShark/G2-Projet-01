@@ -24,6 +24,26 @@ main {
     justify-content: center;
 }
 
+header {
+    #themeBar {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        button {
+            background-color: var(--color-one);
+            color: var(--color-two);
+            border: var(--color-two) solid 2px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: var(--font-two);
+            font-size: 0.8rem;
+            box-shadow: 10px 4px 19px 0px rgba(0, 0, 0, 0.85);
+            padding: 5px;
+            margin: 0 5px;
+        }
+    }
+}
+
 .dilemma {
     display: flex;
     flex-direction: row;
@@ -38,6 +58,9 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        a {
+            text-decoration: none;
+        }
         p {
                 color: var(--color-two);
                 width: 250px;
