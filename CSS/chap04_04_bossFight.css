@@ -4,7 +4,7 @@
     background-color: #0f181e;
     color: var(--accetnColor);
     --accetnColor : gold;
-    font-family: "Modern Antiqua", serif;;
+    font-family: "Modern Antiqua", serif;
 }
 
 * {
@@ -70,35 +70,61 @@ main {
             font-size: 2rem;
         }
     }            
-}
-
-#bossFightGame {
-    display: flex;
-    box-shadow: 0 0 30px 10px rgb(0, 0, 0);
-    border-radius: 20px;
-    z-index: 10;
-    position: absolute;
-    width: 90vw;
-    height: 90vh;
-    top: 5vh;
-    left: 5vw;
-    overflow: hidden;
-}
-#bossFightimg {
-    display: flex;
-    width: 100%;
-}
-
-#bossFightCanva {
-    display: flex;
-    width: 100%;
-    height: 100%;
+    #bossFightGame {
+        background-color: green;
+        display: none;
+        margin: 0 auto;
+        box-shadow: 0 0 30px 10px rgb(0, 0, 0);
+        border-radius: 20px;
+        z-index: 10;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        #bossCanva {
+            display: flex;
+            background-color: grey;
+            background-image: url(../ASSETS/farm_inside.png);
+            background-size: cover;
+        }
+        #chickenBoss {
+            position: absolute;
+            top: 500px;
+            z-index: 11;
+            width: 300px;
+            border-radius: 30%;
+            cursor: pointer;
+        }
+        p {
+            display: none;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(2px);
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 2rem;
+            text-align: center;
+        }
+        #chap05_link {
+            display: none;
+            margin-top: 400px;
+            position: absolute;
+            text-decoration: none;
+            #villageButton {
+                font-size: 2rem;
+                padding: 15px 30px;
+                border: white solid 2px;
+            }
+        }
+    }
 }
 
 
 /* animation */
 
 .play-button {
+    font-family: "Modern Antiqua", serif;
     transition: 0.5s;
     scale: 1;
     box-shadow: none;
@@ -119,3 +145,7 @@ main {
     scale: 1.1;
     box-shadow: 0 0 15px 0 var(--accetnColor);
 }
+
+/* @keyframes chickenAnim {
+    from
+} */

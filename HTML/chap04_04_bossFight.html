@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/chap04_04_bossFight.css">
-    <!-- <script src="../JS/chap04_01_firstChoice.js" defer></script> -->
+    <script src="../JS/chap04_healtBar.js" defer></script>
+    <script src="../JS/chap04_04_bossFight.js" defer></script>
     <title>Chapitre 4 : Chicken dinner</title>
 </head>
 
@@ -24,8 +25,12 @@
         </section>
         <button class="play-button">PLAY</button>
         <section id="bossFightGame">
-            <img id="bossFightimg" src="../ASSETS/farm_inside.png" alt="">
-            <canvas id="bossFightCanva"></canvas>
+            <canvas id="bossCanva"></canvas>
+            <img id="chickenBoss" src="../ASSETS/boss_poulet.png" alt="">
+            <p id="victoryText">Félicitations !! Vous avez vaincu les poulets ! <br>Retourner au village pour fêter ça.</p>
+            <a id="chap05_link" href="../HTML/chap05-001.html">
+                <button class="play-button" id="villageButton">Aller au village</button>
+            </a>
         </section>
     </main>
 </body>
