@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Modern+Antiqua&family=Uncial+Antiqua&display=swap');
+
+:root {
+    --color-one: #0f181e;
+    --color-two: #fcf4cd;
+    --font-one: "Uncial Antiqua", serif;
+    --font-two: "Modern Antiqua", serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-one);
+    color: beige;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    height: auto;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: var(--font-one);
+    align-items: start;
+    margin: left 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: var(--font-one);
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: var(--font-one);
+    font-size: 1rem;
+
+}
+
+h3 {
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 250px;
+    margin-right: 200px;
+    margin-top: 80px;
+    font-family: "Modern Antiqua";
+}
+
+
+.blinking-text {
+    color: hwb(148 28% 0% / 0.753);
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+        color: #ff6347;
+    }
+
+    50% {
+        opacity: 0;
+        color: #359435;
+    }
+
+    100% {
+        opacity: 1;
+        color: #97ff4794;
+    }
+}
+
+#lanterne {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 120px 0;
+}
+
+.img-container {
+    display: flex;
+    margin: 20px;
+}
+
+.img-cart {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 300px;
+    height: 300px;
+    /* background-color: #1c1c1c; */
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+
+    /* overflow: hidden; */
+    gap: 20px;
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+
+.img-cart:hover {
+    transform: scale(1.05);
+}
+
+.blinking-text {
+    font-size: 30px;
+}
+
+.game-area {
+    display: flex;
+    justify-content: none;
+    align-items: center;
+}
+
+
+
+button {
+    background-color: beige;
+    border-color: #0f181e;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(174, 156, 17, 0.3);
+}
+
+button:hover {
+    background-color: var(--color-one);
+    transform: scale(1.1);
+}
+
+footer {
+    height: 80px;
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+}
