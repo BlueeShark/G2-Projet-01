@@ -80,6 +80,12 @@ main {
     width: 80vw;
     a {
         text-decoration: none;
+        border-radius: 15px;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    a:hover {
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+        transform: scale(1.05);
     }
     p {
         color: var(--color-two);
