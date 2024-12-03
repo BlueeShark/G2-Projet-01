@@ -24,7 +24,6 @@ ul {
     font-family: var(--font-one);
     align-items: start;
     margin: left 0;
-    color: white;
 }
 
 h1 {
@@ -32,6 +31,14 @@ h1 {
     margin-bottom: 10px;
     font-family: var(--font-one);
     font-size: 2rem;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: var(--font-one);
+    font-size: 1rem;
+
 }
 
 p {

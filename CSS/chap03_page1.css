@@ -56,29 +56,26 @@ p {
     font-family: "Modern Antiqua", serif;
 }
 
-
-button {
-    background-color: beige;
-    border-color: #0f181e;
-    font-family: var(--font-one);
-    border: none;
+.link {
+    background-color: #fcf4cd;
+    color: var(--color-one);
     padding: 15px 40px;
+    font-family: var(--font-one);
+    transform: scale(1.1);
+    margin-top: 5%;
+    border-radius: 15%;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-top: 70%;
+    text-shadow: 1px 1px 5px var(--color-one);
     transition: transform 0.3s ease,
-        background-color 0.3s ease;
-
 }
 
-.play-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 12px 20px rgba(174, 156, 17, 0.3);
-}
-
-button:hover {
+.link:hover {
     background-color: var(--color-one);
     transform: scale(1.1);
+}
+
+.play-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(174, 156, 17, 0.3);
 }
