@@ -1,35 +1,40 @@
 const button1 = document.getElementById("lightTheme");
 const button2 = document.getElementById("darkTheme");
-const body = document.body;
-const text1 = document.querySelectorAll(".choiceBlock p");
+const currentColorOne = getComputedStyle(document.documentElement).getPropertyValue('--color-one');
+const currentColorTwo = getComputedStyle(document.documentElement).getPropertyValue('--color-two');
+const currentColorThree = getComputedStyle(document.documentElement).getPropertyValue('--color-three');
+const currentColorFour = getComputedStyle(document.documentElement).getPropertyValue('--color-four');
 
 function changeColorLight() {
-    body.style.backgroundColor = "var(--color-three)";
-    button1.style.boxShadow = "10px 4px 19px 0px rgba(0, 0, 0, 0.5)";
-    button2.style.boxShadow = "10px 4px 19px 0px rgba(0, 0, 0, 0.5)";
-    button1.style.backgroundColor = "var(--color-three)";
-    button2.style.backgroundColor = "var(--color-three)";
-    text1.forEach(function(p) {
-        p.style.backgroundColor = "var(--color-three)";
-        p.style.border = "var(--color-one) solid 2px";
-        p.style.color = "var(--color-one)";
-        p.style.boxShadow = "10px 4px 19px 0px rgba(0, 0, 0, 0.5)";
-    });
+    document.documentElement.style.setProperty('--color-one', currentColorThree);
+    document.documentElement.style.setProperty('--color-two', currentColorFour);
 }
 
 function changeColorDark() {
-    body.style.backgroundColor = "var(--color-one)";
-    button1.style.boxShadow = "10px 4px 19px 0px rgba(0, 0, 0, 0.85)";
-    button2.style.boxShadow = "10px 4px 19px 0px rgba(0, 0, 0, 0.85)";
-    button1.style.backgroundColor = "var(--color-one)";
-    button2.style.backgroundColor = "var(--color-one)";
-    text1.forEach(function(p) {
-        p.style.backgroundColor = "var(--color-one)";
-        p.style.border = "var(--color-two) solid 2px";
-        p.style.color = "var(--color-two)";
-        p.style.boxShadow = "10px 4px 19px 0px rgba(0, 0, 0, 0.85)";
-    });
+    document.documentElement.style.setProperty('--color-one', '#0f181e');
+    document.documentElement.style.setProperty('--color-two', '#fcf4cd');
 }
 
 button1.addEventListener("click", changeColorLight);
 button2.addEventListener("click", changeColorDark);
+
+// Modifier la variable CSS
+
+// const body = document.body;
+// const text1 = document.querySelectorAll(".choiceBlock p");
+// const text2 = document.querySelectorAll("#themeBar button");
+// function changeColorLight() {
+//     body.style.backgroundColor = "var(--color-three)";
+//     text1.forEach(function(p) {
+//         p.style.backgroundColor = "var(--color-three)";
+//         p.style.border = "var(--color-four) solid 2px";
+//         p.style.color = "var(--color-four)";
+//         p.style.boxShadow = "10px 4px 19px 0px rgba(0, 0, 0, 0.5)";
+//     });
+//     text2.forEach(function(button) {
+//         button.style.boxShadow = "10px 4px 19px 0px rgba(0, 0, 0, 0.5)";
+//         button.style.backgroundColor = "var(--color-three)";
+//         button.style.color = "var(--color-four)";
+//         button.style.border = "var(--color-four) solid 2px";
+//     })
+// }
