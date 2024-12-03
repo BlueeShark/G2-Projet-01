@@ -5,6 +5,7 @@
     color: var(--accetnColor);
     --accetnColor: gold;
     font-family: "Modern Antiqua", serif;
+    --secondary-color: #fff;
     ;
 }
 
@@ -15,6 +16,7 @@
 }
 
 body {
+
     main {
         display: flex;
         flex-direction: column;
@@ -22,14 +24,53 @@ body {
 
         h1 {
             text-align: center;
-            margin: 50px 0 60px 0;
+            margin: 50px 0 40px 0;
         }
 
-            img {
-            height: 40rem;
-            }
-    }
+        p {
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            border-radius: 20px;
+            color: var(--secondary-color);
+        }
 
-    @media (width < 600px) {
+        img {
+            height: 35rem;
+            border-radius: 20px;
+
+            @media (width < 600px) {
+                width: 400px;
+                height: 400px;
+            }
+
+        }
+
+        a {
+            width: 100%;
+            margin-bottom: 50px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+
+            @media (width < 600px) {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-decoration: none;
+            }
+
+
+            p {
+                color: #E2B500;
+                font-size: 2rem;
+                background-color: #0f181e;
+                border: solid 2px;
+                border-radius: 15px;
+                padding: 10px 20px;
+            }
+        }
     }
 }
