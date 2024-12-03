@@ -14,8 +14,8 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height:100vh;
 }
 
 header {
@@ -69,43 +69,29 @@ main {
             padding: 20px;
             font-size: 2rem;
         }
-    }
-    #game-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        #play-button {
-            display: flex;
-            margin: 50px 0;
-            text-decoration: none;
-            color: white;
-            text-align: center;
-            font-size: 2rem;
-            padding: 20px 50px;
-            background-color: rgb(20, 20, 20);
-            border: var(--accetnColor) solid 2px;
-            border-radius: 15px;
-            cursor: pointer;
-        }              
-    }
-
-}
-
-#game-canvas {
-    display: none; /* Caché au départ */
-    background: #000; /* Fond noir */
+    }            
 }
 
 /* animation */
 
-#play-button {
+.play-button {
     transition: 0.5s;
     scale: 1;
     box-shadow: none;
-}
+    display: flex;
+    margin: 50px 0;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px 50px;
+    background-color: rgb(20, 20, 20);
+    border: var(--accetnColor) solid 2px;
+    border-radius: 15px;
+    cursor: pointer;
+}  
 
-#play-button:hover {
+.play-button:hover {
     scale: 1.1;
     box-shadow: 0 0 15px 0 var(--accetnColor);
 }
