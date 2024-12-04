@@ -19,20 +19,13 @@ body {
     margin: 20px;
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    font-family: var(--font-one);
-    align-items: start;
-    margin: left 0;
-}
 
 h1 {
     font-size: 24px;
     margin-bottom: 10px;
     font-family: var(--font-one);
     font-size: 3rem;
+    margin-top: 0%;
     text-shadow: 1px 1px 5px var(--color-one);
 }
 
@@ -53,15 +46,15 @@ h3 {
     height: 120px;
     margin-left: 400px;
     margin-right: 400px;
-    margin-top: 80px;
+    margin-top: 60px;
     font-size: 1, 1rem;
     border-radius: 10px;
     padding: 0px 10px;
     color: black;
     font-family: "Modern Antiqua";
     background: rgba(255, 255, 255, 0.5);
-    box-shadow: 10px 4px 19px 0px rgba(15, 24, 30, 0.85);
     backdrop-filter: black(2px);
+    box-shadow: 0 12px 20px rgba(174, 156, 17, 0.3);
 }
 
 
@@ -117,6 +110,7 @@ h3 {
     border-radius: 10px;
     gap: 20px;
 
+
     img {
         border-radius: 10px;
     }
@@ -125,6 +119,7 @@ h3 {
 
 .img-cart:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 10px 5px rgba(236, 205, 52, 0.7);
 }
 
 
@@ -140,8 +135,9 @@ button {
     background-color: var(--color-one);
     font-family: var(--font-one);
     color: var(--color-two);
-    border-color: gold;
+    border: 2px solid rgb(74, 74, 31);
     padding: 15px 40px;
+    margin-top: 10px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -150,17 +146,14 @@ button {
     background-color: 0.3s ease;
 }
 
-.play-button:hover {
-    background-color: #359435;
-    transform: scale(1.1);
-    box-shadow: 0 12px 20px rgba(174, 156, 17, 0.3);
-}
 
 button:hover {
-    background-color: #359435;
-    border-color: #359435;
+    background-color: rgba(236, 205, 52, 0.7);
     transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(174, 156, 17, 0.3);
+
 }
+
 
 .link {
     background-color: var(--color-one);
@@ -170,10 +163,12 @@ button:hover {
     font-size: 1rem;
     cursor: pointer;
     border-radius: 8px;
+    padding: 10px 30px;
     text-shadow: 1px 1px 5px var(--color-two);
+    border: 2px solid rgb(74, 74, 31);
 }
 
 .link:hover {
-    scale:(1.1);
-    box-shadow: 0 0 15px 0 var(--accetnColor);
+    scale: (1.1);
+    box-shadow: 0 0 10px 5px rgba(252, 244, 205, 0.7);
 }
