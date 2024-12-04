@@ -3,13 +3,16 @@ const catTalking = document.getElementById('catTalking');
 const bossChicken = document.getElementById('chickenBoss');
 const gameWindow = document.getElementById ('bossFightGame');
 const victoryText = document.getElementById ('victoryText');
+const looseText = document.getElementById ('looseText');
 const villageButton = document.getElementById ('chap05_link');
+const restartButton = document.getElementById ('chap04_01_link');
 
 //afficher le canvs du jeu
 playButon.addEventListener("click", (playGame) => {
     gameWindow.style.display = 'flex';
     playButon.style.display = 'none';
     catTalking.style.display = 'none';
+    setInterval (updateCountdown, 10);
 })
 
 //definir le canvs
@@ -29,26 +32,36 @@ const healthBar = new HealthBar(x, y, healthBarWidth, healthBarheight, health, "
 const frame = function() {
     context.clearRect(0, 0, canvaWidth, canvaheight);
     healthBar.show(context);
-    fightWin();
+    fightOutcome();
     requestAnimationFrame(frame);
 }
 
 //retirer des hp lors du click
 bossChicken.onclick = function() {
-    health -= 10;
+    health -= 5;
     healthBar.updateHealth(health);
 }
 
-function fightWin() {
+function fightOutcome() {
     if (health <= 0) {
         bossChicken.style.display = 'none';
         healthBar.hide();
         victoryText.style.display = 'flex';
-
+        countDownCard.style.display = 'none';
         setTimeout(() => {
             villageButton.style.display = 'flex';
         }, 2000);
     }
+    else if (time <= 0) {
+        healthBar.hide();
+        looseText.style.display = 'flex';
+        countDownCard.style.display = 'none';
+        setTimeout(() => {
+            restartButton.style.display = 'flex';
+        }, 2000);
+    }
 }
+
+
 
 frame();
