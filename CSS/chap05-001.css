@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Modern+Antiqua&family=Uncial+Antiqua&display=swap');
+
+:root {
+    --color-one: #0f181e;
+    --color-two: #fcf4cd;
+    --font-one: "Uncial Antiqua", serif;
+    --font-two: "Modern Antiqua", serif;
+}
+
+body {
+    background-image: url("../ASSETS/image5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* j'avais 2 images, je ne comprends pas pourquoi ?!!
+     A revenir sur le sujet, grâce au code background-repeat: no-repeat; plus qu'une seule*/
+}
+
+button {
+    color: var(--color-two);
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: rgb(96, 12, 230);
+    border: var(--color-one) solid 2px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--color-two);
+    font-family: var(--font-one);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+p {
+    color: var(--color-two);
+    font-family: var(--font-two);
+}
+
+.bloc_histoire {
+    color: var(--color-two);
+    font-family: var(--font-two);
+    width: 700px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    font-family: var(--font-two);
+}
+
+.home-link {
+    position: relative;
+    /* ou absolute/fixed */
+    top: 10px;
+    /* Descend de 10 pixels */
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-family: var(--font-one);
+    background: linear-gradient(to right, red, orange);
+}

@@ -19,14 +19,6 @@ body {
 
 main {
 
-    h1 {
-        background-color: #0f181e;
-        text-align: center;
-        padding: 1rem;
-        background: rgba(10, 10, 10, 0.5);
-        margin-bottom: 0;
-        margin-top: 20px;
-    }
     
     height: 100%;
     width: 100%;
@@ -36,8 +28,16 @@ main {
     display: flex;
     flex-direction: column;
     
+    h1 {
+        background-color: #0f181e;
+        text-align: center;
+        padding: 1rem;
+        background: rgba(10, 10, 10, 0.7);
+        margin-bottom: 0;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
 
-    
     section {
         background: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(4px);
@@ -50,7 +50,7 @@ main {
             color: black;
             margin: 15px;
             padding: 15px;
-            text-align: center;
+            text-align: left;
             font-weight: bold;
             font-size: 22px;
         }
@@ -73,11 +73,11 @@ main {
             border: solid 2px;
             border-radius: 15px;
             padding: 10px 20px;
+            
+        }
+        p:hover {
+            color: #0f181e;
+            background-color: #E2B500;
         }
     }
-
-    a:hover {
-        transform: scale(0.8);
-    } 
-
 }

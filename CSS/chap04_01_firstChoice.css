@@ -101,6 +101,7 @@ main {
                         }
                     }
                     .backImg {
+                        flex-direction: column;
                         transform: scaleX(-1);
                         transition: opacity 0.5s ease, transform 0.5s ease;
                         backface-visibility: hidden;
@@ -112,6 +113,11 @@ main {
                         p {
                             color: white;
                             font-size: 1.5rem;
+                        }
+                        #warningText {
+                            text-align: center;
+                            color: red;
+                            font-size: 3rem;
                         }
                     }
                 }

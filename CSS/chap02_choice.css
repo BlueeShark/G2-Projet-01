@@ -1,9 +1,12 @@
+/* tentative de destruction */
+
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Modern+Antiqua&family=Uncial+Antiqua&display=swap');
 
 :root {
     --color-one: #0f181e;
     --color-two: #fcf4cd;
-    --color-three: #416338;
+    --color-three: #c2e6d8;
+    --color-four: #54969c;
     --font-one: "Uncial Antiqua", serif;
     --font-two: "Modern Antiqua", serif;
 }
@@ -24,6 +27,22 @@ main {
     justify-content: center;
 }
 
+header {
+    #themeBar {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        img {
+            padding: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
 .dilemma {
     display: flex;
     flex-direction: row;
@@ -38,13 +57,28 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        img {
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        img:hover {
+            box-shadow: 0 0 10px 5px rgba(252, 244, 205, 0.7);
+        }
+        a {
+            text-decoration: none;
+            border-radius: 15px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        a:hover {
+            box-shadow: 0 0 10px 5px rgba(252, 244, 205, 0.7);
+            transform: scale(1.05);
+        }
         p {
                 color: var(--color-two);
                 width: 250px;
                 text-align: center;
                 font-size: 1.3rem;
                 padding: 10px 20px;
-                background-color: rgb(20, 20, 20);
+                background-color: var(--color-one);
                 border: var(--color-two) solid 2px;
                 border-radius: 15px;
                 cursor: pointer;
