@@ -32,14 +32,15 @@ h1 {
     font-size: 24px;
     margin-bottom: 10px;
     font-family: var(--font-one);
-    font-size: 2rem;
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px var(--color-one);
 }
 
 h2 {
     font-size: 24px;
     margin-bottom: 10px;
     font-family: var(--font-one);
-    font-size: 1rem;
+    font-size: 1, 5rem;
 
 }
 
@@ -48,10 +49,19 @@ h3 {
     display: flex;
     align-items: center;
     text-align: left;
-    margin-left: 250px;
-    margin-right: 200px;
+    width: 800px;
+    height: 120px;
+    margin-left: 400px;
+    margin-right: 400px;
     margin-top: 80px;
+    font-size: 1, 1rem;
+    border-radius: 10px;
+    padding: 0px 10px;
+    color: black;
     font-family: "Modern Antiqua";
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 4px 19px 0px rgba(15, 24, 30, 0.85);
+    backdrop-filter: black(2px);
 }
 
 
@@ -103,7 +113,7 @@ h3 {
     flex-direction: column;
     width: 300px;
     height: 300px;
-    border: 2px solid #ffffff;
+    border: 2px solid rgb(74, 74, 31);
     border-radius: 10px;
     gap: 20px;
 
@@ -130,7 +140,7 @@ button {
     background-color: var(--color-one);
     font-family: var(--font-one);
     color: var(--color-two);
-    border-color: var(--color-two);
+    border-color: gold;
     padding: 15px 40px;
     font-size: 16px;
     cursor: pointer;
@@ -153,18 +163,17 @@ button:hover {
 }
 
 .link {
-    background-color: var(--color-two);
+    background-color: var(--color-one);
     font-family: var(--font-one);
     text-decoration: none;
-    color: #0f181e;
+    color: var(--color-two);
     font-size: 1rem;
     cursor: pointer;
     border-radius: 8px;
-    text-shadow: 1px 1px 5px var(--color-one);
-
+    text-shadow: 1px 1px 5px var(--color-two);
 }
 
 .link:hover {
-    transform: scale(1.1);
-
+    scale:(1.1);
+    box-shadow: 0 0 15px 0 var(--accetnColor);
 }
