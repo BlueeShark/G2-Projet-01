@@ -11,6 +11,9 @@
 body {
     background-image: url("../ASSETS/image5.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    /* j'avais 2 images, je ne comprends pas pourquoi ?!!
+     A revenir sur le sujet, grâce au code background-repeat: no-repeat; plus qu'une seule*/
 }
 
 button {
@@ -48,9 +51,14 @@ p {
 }
 
 .home-link {
+    position: relative;
+    /* ou absolute/fixed */
+    top: 10px;
+    /* Descend de 10 pixels */
     color: black;
     text-decoration: none;
     font-size: 20px;
+    padding: 5px 5px;
     border-radius: 5px;
     font-family: var(--font-one);
     background: linear-gradient(to right, red, orange);
