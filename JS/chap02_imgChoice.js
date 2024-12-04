@@ -15,8 +15,20 @@ function changeColorDark() {
     document.documentElement.style.setProperty('--color-two', '#fcf4cd');
 }
 
+function switchLight() {
+    button1.style.display = "flex";
+    button2.style.display = "none";
+}
+
+function switchDark() {
+    button1.style.display = "none";
+    button2.style.display = "flex";
+}
+
 button1.addEventListener("click", changeColorLight);
+button1.addEventListener("click", switchDark);
 button2.addEventListener("click", changeColorDark);
+button2.addEventListener("click", switchLight);
 
 // const body = document.body;
 // const text1 = document.querySelectorAll(".choiceBlock p");

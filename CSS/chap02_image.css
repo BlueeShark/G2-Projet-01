@@ -3,8 +3,9 @@
 :root {
     --color-one: #0f181e;
     --color-two: #fcf4cd;
-    --color-three: #c2e6d8;
-    --color-four: #54969c;
+    --color-three: white;
+    --color-four: black;
+    --color-five: #982121;
     --font-one: "Uncial Antiqua", serif;
     --font-two: "Modern Antiqua", serif;
 }

@@ -3,8 +3,8 @@
 :root {
     --color-one: #0f181e;
     --color-two: #fcf4cd;
-    --color-three: #c2e6d8;
-    --color-four: #54969c;
+    --color-three: #fce6e6;
+    --color-four: #982121;
     --font-one: "Uncial Antiqua", serif;
     --font-two: "Modern Antiqua", serif;
 }
@@ -37,6 +37,9 @@ header {
         }
         img:hover {
             transform: scale(1.2);
+        }
+        #darkTheme {
+            display: none;
         }
     }
 }
