@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/chap05-001.css" media="screen" />
+    <title>Chapitre 05</title>
+</head>
+
+<body>
+    <audio id="monAudio" autoplay>
+        <source src="https://universal-soundbank.com/sounds/3672.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas la balise audio.
+        <!-- A priori, cela fonctionne chez certaines personnes, mais pas chez moi -->
+    </audio>
+    <!-- TEST
+    <body onload="maFonction()">
+    <h1>Ma page HTML</h1>
+    <script>
+        function maFonction() {
+        alert('Page chargée avec succès !');
+        }
+    </script>
+    Cela fonctionne pour le test alert ... au chargement du body
+    C'est trop intrusif, et certains navigateurs ne l'autorisent pas...
+    </body> -->
+    <button id="Bravo">Bravo pour ce parcours &#9834;
+        <!-- note de musique simple (♪) en Unicode &#9834-->
+
+    </button>
+    <!-- ceci est en JS, mais vu que j'ai 3 lignes en JS, je l'integre en HTML ci-dessous -->
+    <script>
+        // Créer un élément audio, create an audio element
+        const audio = new Audio("https://universal-soundbank.com/sounds/3672.mp3");
+        audio.loop = false;
+        // i don't wanted to repeat music
+        document.getElementById('Bravo').addEventListener('click', () => audio.play());
+    </script>
+
+    <div class="bloc_histoire">
+        <!-- style a mettre dans le CSS, car avec le style d'écriture, un soulignement coupe certaine lettres/chiffres
+         dans le cas ci-dessous, je fait un décalage de 10px -->
+        <h1 style="text-decoration: underline; text-underline-offset: 10px;"> Chapitre 5 : Le Triomphe de Mistral
+        </h1>
+
+        <p>
+            Le calme revient enfin. Les villageois, émus et reconnaissants, acclament Mistral en héros. Une grande fête
+            est organisée pour célébrer cette victoire. On décore la place du village de lanternes et on sert de grands
+            festins en l’honneur du courageux chat.
+            <br>
+            <br>
+            Le maire remet à Mistral un collier en or gravé de l’inscription "Héros du village", symbole de son rôle de
+            protecteur.
+            <br>
+            <strong>– "Tu es plus qu’un chat... Tu es notre gardien"</strong> dit-il avec fierté.
+            <br>
+            Quant à Mistral, il continua de veiller sur les siens, toujours prêt à défendre le village contre toute
+            menace.
+            <br>
+            <br>
+            Et les poulets ? On raconte qu’ils errent encore dans les bois, mais jamais ils n’osèrent revenir...
+        </p>
+    </div>
+
+    <a href="../index_EB.html" class="home-link">Retour à l'accueil</a>;
+
+</body>
+
+</html>

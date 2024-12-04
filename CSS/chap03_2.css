@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Modern+Antiqua&family=Uncial+Antiqua&display=swap');
+
+:root {
+    --color-one: #0f181e;
+    --color-two: #fcf4cd;
+    --font-one: "Uncial Antiqua", serif;
+    --font-two: "Modern Antiqua", serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-one);
+    color: beige;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    height: auto;
+    font-size: 16px;
+    margin: 20px;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: var(--font-one);
+    font-size: 3rem;
+    margin-top: 0%;
+    text-shadow: 1px 1px 5px var(--color-one);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: var(--font-one);
+    font-size: 1, 5rem;
+
+}
+
+h3 {
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 800px;
+    height: 120px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 60px;
+    font-size: 1, 1rem;
+    border-radius: 10px;
+    padding: 0px 10px;
+    color: black;
+    font-family: "Modern Antiqua";
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: black(2px);
+    box-shadow: 0 12px 20px rgba(174, 156, 17, 0.3);
+}
+
+
+.blinking-text {
+    color: hwb(148 28% 0% / 0.753);
+    font-weight: bold;
+    animation: blink 1s infinite;
+    font-size: 30px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+        color: #ff6347;
+    }
+
+    50% {
+        opacity: 0;
+        color: #359435;
+    }
+
+    100% {
+        opacity: 1;
+        color: #97ff4794;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+        margin: 10px;
+    }
+}
+
+#lanterne {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 120px 0;
+}
+
+.img-container {
+    display: flex;
+    margin: 20px;
+}
+
+.img-cart {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(74, 74, 31);
+    border-radius: 10px;
+    gap: 20px;
+
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+
+.img-cart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 5px rgba(236, 205, 52, 0.7);
+}
+
+
+.game-area {
+    display: flex;
+    justify-content: none;
+    align-items: center;
+}
+
+
+
+button {
+    background-color: var(--color-one);
+    font-family: var(--font-one);
+    color: var(--color-two);
+    border: 2px solid rgb(74, 74, 31);
+    padding: 15px 40px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+    background-color: 0.3s ease;
+}
+
+
+button:hover {
+    background-color: rgba(236, 205, 52, 0.7);
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(174, 156, 17, 0.3);
+
+}
+
+
+.link {
+    background-color: var(--color-one);
+    font-family: var(--font-one);
+    text-decoration: none;
+    color: var(--color-two);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 30px;
+    text-shadow: 1px 1px 5px var(--color-two);
+    border: 2px solid rgb(74, 74, 31);
+}
+
+.link:hover {
+    scale: (1.1);
+    box-shadow: 0 0 10px 5px rgba(252, 244, 205, 0.7);
+}

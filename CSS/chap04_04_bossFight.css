@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    background-color: #0f181e;
+    color: var(--accetnColor);
+    --accetnColor: gold;
+    font-family: "Modern Antiqua", serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 250px;
+        padding-top: 30px;
+
+        #Chapitre4 {
+            color: var(--accetnColor);
+            font-size: 2rem;
+        }
+
+        p {
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    #catTalking {
+        line-height: 2.5rem;
+        max-width: 1500px;
+        margin: 30px;
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border-radius: 20px;
+        background-color: rgba(155, 155, 155, 0.281);
+        box-shadow: 0 0 30px 10px rgb(0, 0, 0);
+        margin-bottom: 100px;
+
+        #catPP {
+            border-radius: 100px;
+            width: 150px;
+            margin: 10px;
+            border: 4px solid #0f181e;
+        }
+
+        p {
+            color: white;
+            padding: 20px;
+            font-size: 2rem;
+        }
+    }
+
+    #bossFightGame {
+        background-color: green;
+        display: none;
+        margin: 0 auto;
+        box-shadow: 0 0 30px 10px rgb(0, 0, 0);
+        border-radius: 20px;
+        z-index: 10;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+
+        #bossCanva {
+            display: flex;
+            background-color: grey;
+            background-image: url(../ASSETS/farm_inside.png);
+            background-size: cover;
+        }
+
+        #countdownCard {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.315);
+            position: absolute;
+            top: 320px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            backdrop-filter: blur(2px);
+            width: 120px;
+            height: 40px;
+            #countDown {
+                color: black;
+                font-weight: 1000;
+                text-align: center;
+                display: flex;
+                font-size: 1.7rem;
+            }
+        }
+
+        #chickenBoss {
+            position: absolute;
+            top: 420px;
+            transform: translateX(-20px);
+            z-index: 11;
+            width: 250px;
+            border-radius: 30%;
+            cursor: pointer;
+        }
+
+        #looseText {
+            display: none;
+            position: absolute;
+            top: 300px;
+        }
+
+        #chap05_link {
+            display: none;
+            margin-top: 400px;
+            position: absolute;
+            text-decoration: none;
+        }
+        #chap04_01_link {
+            display: none;
+            margin-top: 400px;
+            position: absolute;
+            text-decoration: none;
+        }
+    }
+}
+
+.fightText {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* animation */
+
+.play-button, .endButton {
+    font-family: "Modern Antiqua", serif;
+    transition: 0.5s;
+    scale: 1;
+    box-shadow: none;
+    display: flex;
+    margin: 50px 0;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px 50px;
+    background-color: rgb(20, 20, 20);
+    border: var(--accetnColor) solid 2px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    scale: 1.1;
+    box-shadow: 0 0 15px 0 var(--accetnColor);
+}
+
+.endButton {
+    font-size: 2rem;
+    padding: 15px 30px;
+    border: white solid 2px;
+}
+
+.endButton:hover {
+    scale: 1.1;
+    box-shadow: 0 0 15px 0 white;
+}
+
+#chickenBoss {
+    transition: 0.5s;
+    animation: chickenAnim 1s infinite ease-in-out;
+}
+
+@keyframes chickenAnim {
+    0% {
+        transform: rotateZ(-10deg);
+        scale: 1;
+    }
+    50% {
+        transform: rotateZ(5deg);
+        scale: 1.05;
+    }
+    100% {
+        transform: rotateZ(-10deg);
+        scale: 1;
+    }
+}

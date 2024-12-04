@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/chap04_04_bossFight.css">
+    <script src="../JS/chap04_healtBar.js" defer></script>
+    <script src="../JS/chap04_countDown.js" defer></script>
+    <script src="../JS/chap04_04_bossFight.js" defer></script>
+    <title>Chapitre 4 : Chicken dinner</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <p id="Chapitre4">Chapitre 4 :</p>
+            <br>
+            <p>Etape 2 : Battez le chef des poulets !</p>
+        </section>
+    </header>
+    <main>
+        <section id="catTalking">
+            <img id="catPP" src="../ASSETS/chap04_picture_profile_cat.png" alt="profile picture of the cat">
+            <p>Bien ! Il est temps d'en finir !</p>
+        </section>
+        <button class="play-button">PLAY</button>
+        <section id="bossFightGame">
+            <canvas id="bossCanva"></canvas>
+            <div id="countdownCard">
+                <p id="countDown">20:00</p>
+            </div>
+            <img id="chickenBoss" src="../ASSETS/boss_poulet.png" alt="">
+            <p class="fightText" id="victoryText">Félicitations !! Vous avez vaincu les poulets ! <br>Retournez au village pour fêter ça.</p>
+            <p class="fightText" id="looseText">HAHAHA je t'ai vaincu Mistral ! <br>Pas de KFC pour toi ce soir ! You noob.</p>
+            <a id="chap05_link" href="../HTML/chap05-001.html">
+                <button class="endButton" id="villageButton">Allez au village</button>
+            </a>
+            <a id="chap04_01_link" href="../HTML/chap04_01_firstChoice.html">
+                <button class="endButton" id="Restart">Recommencer</button>
+            </a>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    background-color: #0f181e;
+    color: var(--accetnColor);
+    --accetnColor: gold;
+    font-family: "Modern Antiqua", serif;
+    --secondary-color: #fff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (width < 600px) {
+        width: 100vh;
+        height: 100%;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+
+    @media (width < 600px) {
+        text-align: center;
+        padding: 3rem;
+        font-size: 50px;
+    }
+}
+
+section {
+    width: 50rem;
+
+    @media (width < 600px) {
+        width: 50rem;
+        padding: 2rem;
+        font-size: 25px;
+    }
+
+
+    p {
+        text-align: center;
+        margin: 3rem;
+        margin: 15px;
+        padding: 15px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        color: var(--secondary-color);
+
+    }
+
+}
+
+main {
+
+    @media (width < 600px) {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+
+    div {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        img {
+            height: 500px;
+            width: 500px;
+            border-radius: 20px;
+            margin: 30px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+        }
+
+        a {
+            width: 25px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+
+            p {
+                color: #E2B500;
+                font-size: 2rem;
+                background-color: #0f181e;
+                border: solid 2px;
+                border-radius: 15px;
+                padding: 10px 20px;
+            }
+        }
+
+        }
+
+}
+
