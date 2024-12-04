@@ -3,7 +3,7 @@
 :root {
     background-color: #0f181e;
     color: var(--accetnColor);
-    --accetnColor : gold;
+    --accetnColor: gold;
     font-family: "Modern Antiqua", serif;
 }
 
@@ -15,7 +15,7 @@
 
 body {
     width: 100vw;
-    height:100vh;
+    height: 100vh;
 }
 
 header {
@@ -44,6 +44,7 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
     #catTalking {
         line-height: 2.5rem;
         max-width: 1500px;
@@ -69,7 +70,8 @@ main {
             padding: 20px;
             font-size: 2rem;
         }
-    }            
+    }
+
     #bossFightGame {
         background-color: green;
         display: none;
@@ -80,50 +82,81 @@ main {
         overflow: hidden;
         justify-content: center;
         align-items: center;
+
         #bossCanva {
             display: flex;
             background-color: grey;
             background-image: url(../ASSETS/farm_inside.png);
             background-size: cover;
         }
+
+        #countdownCard {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.315);
+            position: absolute;
+            top: 320px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            backdrop-filter: blur(2px);
+            width: 120px;
+            height: 40px;
+            #countDown {
+                color: black;
+                font-weight: 1000;
+                text-align: center;
+                display: flex;
+                font-size: 1.7rem;
+            }
+        }
+
         #chickenBoss {
             position: absolute;
-            top: 500px;
+            top: 420px;
+            transform: translateX(-20px);
             z-index: 11;
-            width: 300px;
+            width: 250px;
             border-radius: 30%;
             cursor: pointer;
         }
-        p {
+
+        #looseText {
             display: none;
             position: absolute;
-            background-color: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(2px);
-            color: black;
-            padding: 20px;
-            border-radius: 10px;
-            font-weight: 600;
-            font-size: 2rem;
-            text-align: center;
+            top: 300px;
         }
+
         #chap05_link {
             display: none;
             margin-top: 400px;
             position: absolute;
             text-decoration: none;
-            #villageButton {
-                font-size: 2rem;
-                padding: 15px 30px;
-                border: white solid 2px;
-            }
+        }
+        #chap04_01_link {
+            display: none;
+            margin-top: 400px;
+            position: absolute;
+            text-decoration: none;
         }
     }
 }
 
+.fightText {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
 
 /* animation */
 
-.play-button {
+.play-button, .endButton {
     font-family: "Modern Antiqua", serif;
     transition: 0.5s;
     scale: 1;
@@ -139,13 +172,38 @@ main {
     border: var(--accetnColor) solid 2px;
     border-radius: 15px;
     cursor: pointer;
-}  
+}
 
 .play-button:hover {
     scale: 1.1;
     box-shadow: 0 0 15px 0 var(--accetnColor);
 }
 
-/* @keyframes chickenAnim {
-    from
-} */
+.endButton {
+    font-size: 2rem;
+    padding: 15px 30px;
+    border: white solid 2px;
+}
+
+.endButton:hover {
+    scale: 1.1;
+    box-shadow: 0 0 15px 0 white;
+}
+
+#chickenBoss {
+    transition: 0.5s;
+    animation: chickenAnim 1s infinite;
+    transform: rotateY('0deg');
+}
+
+@keyframes chickenAnim {
+    0% {
+        transform: rotateY('0deg');
+    }
+    50% {
+        transform: rotateY('45deg');
+    }
+    100% {
+        transform: rotateY('0deg');
+    }
+}

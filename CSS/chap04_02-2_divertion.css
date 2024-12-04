@@ -46,7 +46,7 @@ main {
     align-items: center;
     #catTalking {
         line-height: 2.5rem;
-        max-width: 1500px;
+        max-width: 1000px;
         margin: 30px;
         padding-left: 30px;
         display: flex;
@@ -69,27 +69,31 @@ main {
             padding: 20px;
             font-size: 2rem;
         }
-    }            
+    }   
+    section {
+        p {
+            font-size: 2rem;
+        }
+        .play-button {
+            transition: 0.5s;
+            scale: 1;
+            box-shadow: none;
+            display: flex;
+            margin: 50px 0;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            padding: 20px 30px;
+            background-color: rgb(20, 20, 20);
+            border: var(--accetnColor) solid 2px;
+            border-radius: 15px;
+            cursor: pointer;
+        }  
+    }
 }
 
 /* animation */
-
-.play-button {
-    transition: 0.5s;
-    scale: 1;
-    box-shadow: none;
-    display: flex;
-    margin: 50px 0;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    padding: 20px 50px;
-    background-color: rgb(20, 20, 20);
-    border: var(--accetnColor) solid 2px;
-    border-radius: 15px;
-    cursor: pointer;
-}  
 
 .play-button:hover {
     scale: 1.1;
