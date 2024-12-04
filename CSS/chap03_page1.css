@@ -57,24 +57,22 @@ p {
 }
 
 .link {
-    background-color: #fcf4cd;
-    color: var(--color-one);
-    padding: 15px 40px;
-    font-family: var(--font-one);
-    transform: scale(1.1);
-    margin-top: 5%;
-    border-radius: 15%;
-    font-size: 16px;
+    background-color: var(--color-one);
+    font-family:"Modern Antiqua", serif;
+    color:var(--color-two--);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
     cursor: pointer;
-    text-shadow: 1px 1px 5px var(--color-one);
-    transition: transform 0.3s ease,
+    border: gold solid 2px;
+    border-radius: 8px;
+    text-shadow: 1px 1px 5px var(--color-two);
 }
-
-.link:hover {
-    transform: scale(1.1);
-}
-
 .play-link:hover {
     transform: scale(1.1);
     box-shadow: 0 12px 20px rgba(174, 156, 17, 0.3);
+}
+.link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 0 var(--accetnColor);
 }
