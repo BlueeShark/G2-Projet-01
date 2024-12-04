@@ -15,7 +15,7 @@ assurance inébranlable.`;
         if (index < text.length) {
             textContainer.innerHTML += text[index];
             index++;
-            setTimeout(displayLetterByLetter, 50);
+            setTimeout(displayLetterByLetter, 28);
         }
     }
 
